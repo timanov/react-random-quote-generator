@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap');
+
 .App{
   display: flex;
   justify-content: center;
@@ -7,4 +9,23 @@
 }
 .quote {
   background: url(./assets/bg.jpg);
+  background-size: cover;
+  width: 450px;
+  height: 320px;
+  border-radius: 10px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quote h2 {
+  font-size: 2em;
+  font-family: 'Lobster', cursive;
+}
+
+.quote small {
+  font-size: 1.5em;
+  font-family: 'Dancing Script', cursive;
 }
