@@ -3,8 +3,13 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <p>Hello</p>
+      <div className="quote">
+          <h2>New Quote</h2>
+          <small>-Auther-</small>
+      </div>
+      <button className='btn'>Generate New Quote</button>
     </div>
+    
   );
 }
 
