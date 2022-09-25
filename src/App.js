@@ -3,9 +3,21 @@ import './App.css';
 
 function App() {
 
-  const [quote, setQuote] = useState("Hello");
-  const [author, setAuthor] = useState("World");
+  const [quote, setQuote] = useState("");
+  const [author, setAuthor] = useState("");
+  // http://api.quotable.io/random
 
+  useEffect(() => {
+    fetch("http://api.quotable.io/random")
+      .then(res => res.json())
+      .then(
+        (quote => {
+           setQuote(quote.content);
+           setAuthor();
+          console.log(quote);
+        })
+      )
+  },[]);
   return (
     <div className="App">
       <div className="quote">
